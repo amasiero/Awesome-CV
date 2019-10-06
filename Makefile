@@ -2,7 +2,7 @@
 # test:
 # 	cd examples/ ; for f in *.tex; do xelatex $$f; done
 
-NAME  = resume-ptbr
+NAME  = resume-en
 SHELL = bash
 PWD   = $(shell pwd)
 
@@ -18,4 +18,4 @@ else
 	# Works on El Captain
 	"/Library/TeX/texbin/xelatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
 endif
-	test -e $(NAME).pdf && mv $(NAME).pdf CV.pdf
+	test -e $(NAME).pdf && mv $(NAME).pdf CV-en.pdf
